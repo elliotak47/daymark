@@ -1,0 +1,7 @@
+{
+  "uuid": "daymark@daymark.app",
+  "name": "Daymark",
+  "description": "Daily scratchpad in the panel — click the icon to open your notes",
+  "version": 1,
+  "shell-version": ["46", "47", "48"]
+}

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "daymark"
+version = "0.1.0"
+description = "Lightweight desktop-integrated daily scratchpad"
+requires-python = ">=3.11"
+dependencies = [
+    "pystray>=0.19",
+    "Pillow>=10.0",
+]
+
+[project.scripts]
+daymark = "daymark.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.setuptools.package-data]
+daymark = ["../../../data/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

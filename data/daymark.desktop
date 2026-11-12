@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Daymark
+GenericName=Daily Scratchpad
+Comment=Lightweight desktop-integrated daily scratchpad
+Exec=daymark
+Icon=accessories-text-editor
+Terminal=false
+Categories=Utility;TextEditor;
+Keywords=notes;todo;tasks;scratchpad;daily;
+X-GNOME-Autostart-enabled=true
+StartupNotify=false

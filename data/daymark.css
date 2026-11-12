@@ -1,0 +1,485 @@
+/* ============================================================
+   Daymark — Premium Minimal Dark Theme
+   ============================================================ */
+
+/* ── Window ───────────────────────────────────────────────── */
+window.background {
+  background-color: #111318;
+}
+
+.main-panel {
+  background-color: transparent;
+}
+
+/* ── Date header ──────────────────────────────────────────── */
+.date-header {
+  padding: 10px 10px 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.date-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  color: rgba(255,255,255,0.78);
+}
+
+.cal-hint-icon {
+  color: rgba(255,255,255,0.20);
+  -gtk-icon-size: 12px;
+}
+
+.nav-btn {
+  min-width: 28px;
+  min-height: 28px;
+  padding: 0;
+  border-radius: 6px;
+  color: rgba(255,255,255,0.35);
+  box-shadow: none;
+  border: none;
+}
+
+.nav-btn:hover {
+  background-color: rgba(255,255,255,0.07);
+  color: rgba(255,255,255,0.75);
+}
+
+.today-button {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 10px;
+  min-height: 22px;
+  border-radius: 11px;
+  background-color: rgba(139,92,246,0.14);
+  color: #a78bfa;
+  border: 1px solid rgba(139,92,246,0.22);
+  box-shadow: none;
+}
+
+.today-button:hover {
+  background-color: rgba(139,92,246,0.24);
+  border-color: rgba(139,92,246,0.38);
+}
+
+/* ── 7-day date strip ─────────────────────────────────────── */
+.date-strip {
+  background-color: rgba(255,255,255,0.025);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding: 4px 6px;
+}
+
+.date-chip {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 8px;
+  padding: 4px 2px;
+  min-width: 44px;
+  min-height: 52px;
+}
+
+.date-chip:hover {
+  background-color: rgba(139,92,246,0.10);
+}
+
+.date-chip-selected {
+  background-color: rgba(139,92,246,0.22);
+  border: 1px solid rgba(139,92,246,0.35);
+}
+
+.date-chip-selected:hover {
+  background-color: rgba(139,92,246,0.30);
+}
+
+.date-chip-dow {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: rgba(255,255,255,0.32);
+}
+
+.date-chip-today .date-chip-dow {
+  color: #a78bfa;
+}
+
+.date-chip-day {
+  font-size: 14px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  color: rgba(255,255,255,0.72);
+}
+
+.date-chip-today .date-chip-day {
+  font-weight: 800;
+  color: #a78bfa;
+}
+
+.date-chip-selected .date-chip-day {
+  color: #c4b5fd;
+}
+
+.date-chip-dot {
+  font-size: 4px;
+  color: rgba(251,191,36,0.80);
+  margin-top: -2px;
+}
+
+/* ── Section headers ──────────────────────────────────────── */
+.section-header {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: rgba(255,255,255,0.32);
+}
+
+.task-stats-label {
+  font-size: 10px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.28);
+}
+
+.task-stats-done {
+  color: rgba(74,222,128,0.65);
+}
+
+.section-collapse-btn {
+  min-width: 22px;
+  min-height: 22px;
+  padding: 0;
+  border-radius: 4px;
+  color: rgba(255,255,255,0.28);
+  box-shadow: none;
+  border: none;
+}
+
+.section-collapse-btn:hover {
+  color: rgba(255,255,255,0.65);
+  background-color: rgba(255,255,255,0.06);
+}
+
+/* ── Notes editor ─────────────────────────────────────────── */
+.notes-fmt-btn {
+  min-width: 24px;
+  min-height: 22px;
+  padding: 0 4px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: rgba(255,255,255,0.30);
+  font-size: 11px;
+}
+
+.notes-fmt-btn:hover {
+  background-color: rgba(139,92,246,0.14);
+  color: #a78bfa;
+}
+
+.notes-fmt-btn:active {
+  background-color: rgba(139,92,246,0.25);
+}
+
+.notes-scroll {
+  min-height: 100px;
+  background-color: transparent;
+}
+
+.notes-textview {
+  font-size: 15px;
+}
+
+.notes-textview text {
+  background-color: transparent;
+  color: rgba(255,255,255,0.82);
+  caret-color: #a78bfa;
+}
+
+.notes-textview text selection {
+  background-color: rgba(139,92,246,0.28);
+}
+
+.notes-placeholder {
+  font-size: 15px;
+  font-style: italic;
+  color: rgba(255,255,255,0.28);
+}
+
+.save-indicator {
+  font-size: 10px;
+  color: rgba(74,222,128,0.55);
+  font-weight: 500;
+}
+
+/* ── Task list ────────────────────────────────────────────── */
+.task-list {
+  background: transparent;
+}
+
+.task-list row {
+  background: transparent;
+  border-radius: 6px;
+  margin: 0 6px;
+}
+
+.task-list row:hover {
+  background-color: rgba(255,255,255,0.04);
+}
+
+.task-row {
+  padding: 4px 2px;
+  min-height: 32px;
+}
+
+.task-row label {
+  font-size: 14px;
+}
+
+.completed-task-label {
+  color: rgba(255,255,255,0.24);
+  text-decoration: line-through;
+}
+
+/* Task soft body — dim preview line below description */
+.task-body-preview {
+  font-size: 11px;
+  color: rgba(255,255,255,0.33);
+  font-style: italic;
+  margin-bottom: 2px;
+}
+
+.task-list row:hover .task-body-preview {
+  color: rgba(255,255,255,0.52);
+}
+
+/* Body editor scrollwindow inside task row */
+.task-body-scroll {
+  background: transparent;
+  border-radius: 4px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+/* Body entry in add-task area */
+.add-task-body-entry {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  font-size: 12px;
+  color: rgba(255,255,255,0.45);
+  font-style: italic;
+}
+
+.add-task-body-entry:focus {
+  box-shadow: none;
+}
+
+/* Body textview inline in task row */
+.task-body-entry {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.task-body-entry text {
+  background-color: rgba(139,92,246,0.07);
+  color: rgba(255,255,255,0.72);
+  caret-color: #a78bfa;
+  border-radius: 4px;
+}
+
+/* Carried-forward row — no yellow border, subtle background only */
+.carried-forward {
+  background-color: rgba(251,191,36,0.04);
+  border-radius: 6px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+/* Subtle separator between carried tasks */
+.carried-list row {
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  border-radius: 0;
+  margin: 0 4px;
+}
+
+.carried-list row:last-child {
+  border-bottom: none;
+}
+
+.task-actions {
+  opacity: 0;
+}
+
+.task-list row:hover .task-actions {
+  opacity: 1;
+}
+
+.add-task-entry {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  font-size: 14px;
+  color: rgba(255,255,255,0.60);
+}
+
+.add-task-entry:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Override Adwaita's orange focus ring on entries */
+entry.add-task-entry {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+entry.add-task-entry:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.add-task-icon {
+  color: rgba(139,92,246,0.40);
+}
+
+.empty-state-label {
+  color: rgba(255,255,255,0.20);
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* ── Calendar popover ─────────────────────────────────────── */
+popover.calendar-popover > contents {
+  background-color: #161922;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 0;
+}
+
+popover.calendar-popover arrow {
+  background-color: #161922;
+}
+
+/* ── Calendar / history ───────────────────────────────────── */
+.history-panel {
+  background-color: transparent;
+}
+
+.history-month-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.38);
+}
+
+.cal-dow-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: rgba(255,255,255,0.28);
+  min-width: 32px;
+  min-height: 20px;
+}
+
+flowboxchild {
+  border-radius: 6px;
+  padding: 2px;
+  min-width: 32px;
+  min-height: 30px;
+}
+
+flowboxchild:hover {
+  background-color: rgba(139,92,246,0.12);
+}
+
+flowboxchild.selected-chip {
+  background-color: rgba(139,92,246,0.20);
+}
+
+flowboxchild.today-chip .history-day-num {
+  font-weight: 800;
+  color: #a78bfa;
+}
+
+.history-day-num {
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  color: rgba(255,255,255,0.60);
+}
+
+.pending-dot {
+  font-size: 4px;
+  color: rgba(251,191,36,0.80);
+  margin-top: -2px;
+}
+
+/* ── Separators ───────────────────────────────────────────── */
+separator {
+  background-color: rgba(255,255,255,0.07);
+  min-height: 1px;
+}
+
+/* ── Search overlay ───────────────────────────────────────── */
+.search-overlay {
+  background-color: rgba(17,19,24,0.98);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.search-results-list { background: transparent; }
+
+.search-results-list row {
+  border-radius: 6px;
+  margin: 2px 8px;
+}
+
+.search-results-list row:hover {
+  background-color: rgba(139,92,246,0.10);
+}
+
+.search-result-type {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #a78bfa;
+  background-color: rgba(139,92,246,0.14);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.search-result-date    { font-size: 11px; color: rgba(255,255,255,0.33); }
+.search-result-done    { color: rgba(74,222,128,0.75); font-size: 11px; }
+.search-result-snippet { font-size: 12px; color: rgba(255,255,255,0.68); }
+.search-empty          { color: rgba(255,255,255,0.28); font-style: italic; }
+
+/* ── Scrollbars ───────────────────────────────────────────── */
+scrollbar { background-color: transparent; border: none; }
+
+scrollbar slider {
+  background-color: rgba(255,255,255,0.08);
+  border-radius: 4px;
+  min-width: 3px;
+  min-height: 3px;
+}
+
+scrollbar slider:hover { background-color: rgba(255,255,255,0.16); }
+
+/* ── Checkboxes ───────────────────────────────────────────── */
+checkbutton check {
+  border-radius: 50%;
+  min-width: 16px;
+  min-height: 16px;
+  border: 1.5px solid rgba(255,255,255,0.18);
+  background-color: transparent;
+  box-shadow: none;
+}
+
+checkbutton:checked check {
+  background-color: #8b5cf6;
+  border-color: #8b5cf6;
+  color: white;
+  box-shadow: none;
+}
+
+checkbutton check:hover {
+  border-color: rgba(139,92,246,0.65);
+}
