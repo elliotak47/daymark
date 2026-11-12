@@ -11,7 +11,7 @@ Daymark lives in your GNOME top panel as a small icon. Click it — a clean popu
 ## Features
 
 - **Notes-first workflow** — write freely; `[]` at the start of a line becomes a task automatically
-- **Task context** — lines below a `[]` task (bullets, numbered steps) attach to that task as collapsible context
+- **Task context** — lines below a `[]` task (bullets, numbered steps) attach as collapsible context; hover to expand
 - **Carry-forward** — incomplete tasks from past days surface automatically under today's view
 - **Date navigation** — 7-day strip + calendar picker; `Alt+Left` / `Alt+Right` to move between days
 - **Full-text search** — `Ctrl+F` searches all notes and tasks across all dates
@@ -21,9 +21,9 @@ Daymark lives in your GNOME top panel as a small icon. Click it — a clean popu
 
 ---
 
-## Install (Linux — Ubuntu 22.04 / 24.04 / Fedora 39+)
+## Install
 
-**Requirements:** Python 3.11+, GTK4, libadwaita — usually already on Ubuntu 22.04+.
+**Requirements:** GNOME 46+ (Ubuntu 22.04 / 24.04, Fedora 39+), Python 3.11+
 
 ```bash
 git clone https://github.com/elliotak47/daymark.git
@@ -31,9 +31,7 @@ cd daymark
 bash install.sh
 ```
 
-Then **log out and log back in** so GNOME Shell picks up the new extension.
-
-After login, enable the extension once:
+Then **log out and log back in** so GNOME Shell picks up the new extension, then enable it once:
 
 ```bash
 gnome-extensions enable daymark@daymark.app
@@ -130,11 +128,11 @@ daymark/
 └── install.sh           # One-step installer
 ```
 
-### Contributing
+---
 
-Pull requests welcome. Open an issue first for anything larger than a bug fix so we can discuss direction.
+## Contributing
 
-Please keep PRs focused — one thing per PR.
+Issues and pull requests are welcome. Please open an issue first for anything larger than a bug fix so we can discuss direction. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ---
 

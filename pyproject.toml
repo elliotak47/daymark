@@ -5,18 +5,30 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "daymark"
 version = "0.1.0"
-description = "Lightweight desktop-integrated daily scratchpad"
+description = "A minimal daily scratchpad + task manager for GNOME Linux"
 requires-python = ">=3.11"
-dependencies = [
-    "pystray>=0.19",
-    "Pillow>=10.0",
+dependencies = []
+license = {text = "MIT"}
+keywords = ["gnome", "gtk4", "tasks", "journal", "notes", "productivity", "linux", "libadwaita"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Environment :: X11 Applications :: GTK",
+    "Topic :: Office/Business :: Scheduling",
 ]
+
+[project.urls]
+Homepage = "https://github.com/elliotak47/daymark"
+Repository = "https://github.com/elliotak47/daymark"
+Issues = "https://github.com/elliotak47/daymark/issues"
 
 [project.scripts]
 daymark = "daymark.__main__:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
 [tool.setuptools.package-data]
 daymark = ["../../../data/*"]
 
